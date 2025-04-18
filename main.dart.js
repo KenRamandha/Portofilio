@@ -5954,7 +5954,7 @@ else if(n==="%"){n="%25"
 j=1}q.a=k+n
 s+=j
 r=s
-p=!0}else if(o<127&&(B.zx[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.c7("")
+p=!0}else if(o<127&&(B.zw[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.c7("")
 if(r<s){q.a+=B.d.a5(a,r,s)
 r=s}p=!1}++s}else if(o<=93&&(B.js[o>>>4]&1<<(o&15))!==0)A.ov(a,s,"Invalid character")
 else{j=1
@@ -5986,7 +5986,7 @@ if(a==="https")return"https"
 if(a==="package")return"package"
 return a},
 acE(a,b,c){if(a==null)return""
-return A.wD(a,b,c,B.za,!1,!1)},
+return A.wD(a,b,c,B.z9,!1,!1)},
 acB(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
 else s=A.wD(a,b,c,B.jr,!0,!0)
@@ -16769,7 +16769,7 @@ t.DI.a(a)
 s=J.bj(a)
 r=s.i(a,0)
 r.toString
-switch(B.zS[A.cx(r)].a){case 0:s=s.eu(a,1)
+switch(B.zR[A.cx(r)].a){case 0:s=s.eu(a,1)
 r=s[0]
 r.toString
 A.cx(r)
@@ -19106,9 +19106,11 @@ a0P:function a0P(a){this.a=a},
 xD:function xD(a){this.a=a},
 KK:function KK(){},
 zk:function zk(a){this.a=a},
-iT:function iT(a,b,c){this.c=a
-this.d=b
-this.a=c},
+iT:function iT(a,b,c,d){var _=this
+_.c=a
+_.d=b
+_.e=c
+_.a=d},
 v1:function v1(a,b){var _=this
 _.d=!1
 _.f=_.e=$
@@ -19842,7 +19844,7 @@ return!1},
 k(a){return"ColorFilter.mode("+A.o(this.a)+", "+this.b.k(0)+")"}}
 A.po.prototype={
 gT7(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.q(B.zz,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.q(B.zy,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 oI(){return $.aL.ap().ColorFilter.MakeMatrix(this.gT7())},
@@ -23026,7 +23028,7 @@ if(g.b){q=t.f
 f=q.a(q.a(B.aT.dj(a0)).i(0,"data"))
 e=A.c1(f.i(0,"message"))
 if(e!=null&&e.length!==0){d=A.Af(f,"assertiveness")
-g.a.Fj(e,B.zW[d==null?0:d])}}c.cF(a1,B.aT.b1(!0))
+g.a.Fj(e,B.zV[d==null?0:d])}}c.cF(a1,B.aT.b1(!0))
 return
 case"flutter/navigation":q=t.j8
 if(q.a(c.gbv().b.i(0,0))!=null)q.a(c.gbv().b.i(0,0)).x4(a0).aL(new A.NN(c,a1),t.P)
@@ -26065,7 +26067,7 @@ m=A.x5(s.i(0,"fontWeightIndex"))
 l=m!=null?A.apK(m):"normal"
 r=A.acS(s.i(0,"fontSize"))
 if(r==null)r=null
-p=new A.YC(new A.Nr(r,l,A.c1(s.i(0,"fontFamily")),B.zr[o],B.fq[n]))
+p=new A.YC(new A.Nr(r,l,A.c1(s.i(0,"fontFamily")),B.zq[o],B.fq[n]))
 break
 case"TextInput.clearClient":p=B.w8
 break
@@ -46381,7 +46383,7 @@ A.hQ.prototype={}
 A.Bm.prototype={
 hE(a,b){var s,r,q,p,o,n=$.a4.a0$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.q,r=0;r<2;++r){q=B.zQ[r]
+for(s=t.q,r=0;r<2;++r){q=B.zP[r]
 p=n.e
 p.toString
 o=A.a5r(p,q,s)
@@ -57642,8 +57644,8 @@ q=t.E
 r=A.W8(A.b([j,new A.zu(1,B.j9,new A.dw(new A.b3(s.a.a*0.02,0,0,0),r,o),o),A.a9Z(A.a9Y(p.d?B.i0:B.i_,B.i),p.gSk())],q),B.fJ,B.bO)
 s=p.f
 s===$&&A.a()
-if(p.d){p.a.toString
-n=A.dc("",A.c8(o,o,B.i,o,o,o,o,o,o,o,o,A.L(a,o,n).w.a.a<=600?A.L(a,o,n).w.a.a*0.02:A.L(a,o,n).w.a.a*0.015,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),B.bu)}else n=B.cY
+if(p.d){j=p.a.e
+n=A.dc(j,A.c8(o,o,B.i,o,o,o,o,o,o,o,o,A.L(a,o,n).w.a.a<=600?A.L(a,o,n).w.a.a*0.02:A.L(a,o,n).w.a.a*0.015,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),B.bu)}else n=B.cY
 return new A.dw(new A.b3(k.a.a*0.02,m.a.a*0.03,l.a.a*0.02,0),A.iG(A.b([r,A.abn(n,s)],q),B.aq,B.ad),o)}}
 A.a0U.prototype={
 $0(){var s,r=this.a
@@ -57733,8 +57735,8 @@ A.Bn.prototype={
 S(a){var s=null,r=t.w
 return A.ke(A.iG(A.b([A.dc("Some of the projects I've worked on before",A.c8(s,s,B.i,s,s,s,s,s,s,s,s,A.L(a,s,r).w.a.a*0.035,s,s,B.a1,s,s,!0,s,s,s,s,s,s,s,s),B.an),new A.cj(s,A.L(a,s,r).w.a.a*0.05,s,s),B.Lk],t.E),B.aq,B.op),s,s)}}
 A.CP.prototype={
-S(a){var s=null,r=t.w,q=A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a:A.L(a,s,r).w.a.a*0.45,p=t.E,o=A.iG(A.b([A.dc("Skills",A.c8(s,s,B.i,s,s,s,s,s,s,s,s,A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a*0.04:A.L(a,s,r).w.a.a*0.03,s,s,B.a1,s,s,!0,s,s,s,s,s,s,s,s),B.an),B.yr,B.yu],p),B.aq,B.ad),n=A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a:A.L(a,s,r).w.a.a*0.45,m=A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a*0.05:0
-return A.ke(A.abX(B.hC,A.b([new A.cj(q,s,o,s),new A.cj(n,s,A.iG(A.b([new A.dw(new A.b3(0,m,0,0),A.dc("Experiences",A.c8(s,s,B.i,s,s,s,s,s,s,s,s,A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a*0.04:A.L(a,s,r).w.a.a*0.03,s,s,B.a1,s,s,!0,s,s,s,s,s,s,s,s),B.an),s),B.yt,B.ys],p),B.aq,B.ad),s)],p)),s,s)}}
+S(a){var s=null,r=t.w,q=A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a:A.L(a,s,r).w.a.a*0.45,p=t.E,o=A.iG(A.b([A.dc("Skills",A.c8(s,s,B.i,s,s,s,s,s,s,s,s,A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a*0.04:A.L(a,s,r).w.a.a*0.03,s,s,B.a1,s,s,!0,s,s,s,s,s,s,s,s),B.an),B.yu,B.yr],p),B.aq,B.ad),n=A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a:A.L(a,s,r).w.a.a*0.45,m=A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a*0.05:0
+return A.ke(A.abX(B.hC,A.b([new A.cj(q,s,o,s),new A.cj(n,s,A.iG(A.b([new A.dw(new A.b3(0,m,0,0),A.dc("Experiences",A.c8(s,s,B.i,s,s,s,s,s,s,s,s,A.L(a,s,r).w.a.a<=600?A.L(a,s,r).w.a.a*0.04:A.L(a,s,r).w.a.a*0.03,s,s,B.a1,s,s,!0,s,s,s,s,s,s,s,s),B.an),s),B.ys,B.yt],p),B.aq,B.ad),s)],p)),s,s)}}
 A.nD.prototype={
 gv(a){return this.b},
 i(a,b){if(b>=this.b)throw A.e(A.Q4(b,this))
@@ -60353,10 +60355,10 @@ B.bg=new A.qw(0,"deferToChild")
 B.ar=new A.qw(1,"opaque")
 B.dM=new A.qw(2,"translucent")
 B.yq=new A.qx(null)
-B.yr=new A.iT("01","Android Development (Java and Kotlin)",null)
-B.ys=new A.iT("02","Android Developer Kedaireka",null)
-B.yt=new A.iT("01","Mobile Developer at Fleetify",null)
-B.yu=new A.iT("02","Mobile Development (Flutter)",null)
+B.yr=new A.iT("02","Mobile Development (Flutter)","",null)
+B.ys=new A.iT("01","Mobile Developer at Fleetify","As a Mobile Developer at Fleetify, I am responsible for maintaining and developing features for the Fleetify, Fleetify Mechanic, and Fleetify Approval applications. My work includes designing and implementing user interfaces, developing and testing mobile applications, and managing their release on both the Play Store and App Store. I actively contribute to shaping feature flows to align with current market needs and conduct continuous research to ensure Fleetify\u2019s apps stay up-to-date with the latest trends and technologies.",null)
+B.yt=new A.iT("02","Android Developer Kedaireka","While pursuing my university studies, I participated in the Kedaireka program as an Android Developer. I successfully developed a fish auction mobile application used by local fishermen in Kendal, under the supervision of the Kendal local government. This project aimed to digitalize the traditional fish auction process, making it more efficient, transparent, and accessible for both sellers and buyers.",null)
+B.yu=new A.iT("01","Android Development (Java and Kotlin)","",null)
 B.Mu=new A.PK(0,"start")
 B.yv=new A.qy(null)
 B.yx=new A.cD(null,null,null,null,null,B.m,null,null,null)
@@ -60412,7 +60414,7 @@ B.z5=new A.qY(null,null,null,null,null,null,null,null,null,null,null,null,null,n
 B.jn=A.b(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.z6=A.b(s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),t.t)
 B.z7=A.b(s([0,6,12,18]),t.t)
-B.za=A.b(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
+B.z9=A.b(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
 B.dS=A.b(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.d1=new A.hX(0,"left")
 B.hr=new A.hX(1,"right")
@@ -60420,8 +60422,8 @@ B.an=new A.hX(2,"center")
 B.bu=new A.hX(3,"justify")
 B.aD=new A.hX(4,"start")
 B.hs=new A.hX(5,"end")
-B.zr=A.b(s([B.d1,B.hr,B.an,B.bu,B.aD,B.hs]),A.a8("u<hX>"))
-B.zx=A.b(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
+B.zq=A.b(s([B.d1,B.hr,B.an,B.bu,B.aD,B.hs]),A.a8("u<hX>"))
+B.zw=A.b(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
 B.Lw=new A.i8(0,0)
 B.Lz=new A.i8(1,0.05)
 B.Ly=new A.i8(3,0.08)
@@ -60429,15 +60431,15 @@ B.LA=new A.i8(6,0.11)
 B.Lx=new A.i8(8,0.12)
 B.LB=new A.i8(12,0.14)
 B.jo=A.b(s([B.Lw,B.Lz,B.Ly,B.LA,B.Lx,B.LB]),A.a8("u<i8>"))
-B.zz=A.b(s([4,9,14,19]),t.t)
+B.zy=A.b(s([4,9,14,19]),t.t)
 B.vi=new A.ma()
 B.h_=new A.Cr(1,"page")
 B.h0=new A.dx(B.C,B.h_)
-B.zQ=A.b(s([B.vi,B.h0]),A.a8("u<am>"))
+B.zP=A.b(s([B.vi,B.h0]),A.a8("u<am>"))
 B.hJ=new A.vV(0,"named")
 B.uP=new A.vV(1,"anonymous")
-B.zS=A.b(s([B.hJ,B.uP]),A.a8("u<vV>"))
-B.zW=A.b(s([B.eL,B.eM]),A.a8("u<p1>"))
+B.zR=A.b(s([B.hJ,B.uP]),A.a8("u<vV>"))
+B.zV=A.b(s([B.eL,B.eM]),A.a8("u<p1>"))
 B.jp=A.b(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
 B.cy=A.b(s([B.b6,B.aS,B.da,B.db,B.eK]),t.EQ)
 B.AH=new A.fN("en","US")
@@ -60508,12 +60510,12 @@ B.z8=A.b(s([255,216,255]),t.Z)
 B.yF=new A.iV(2,"jpeg")
 B.yO=new A.fG(B.yF,!1,3,"jpeg")
 B.yz=new A.hz(B.z8,B.yO,3,"jpeg")
-B.zV=A.b(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
-B.yD=new A.hz(B.zV,B.jg,4,"webp")
-B.zJ=A.b(s([66,77]),t.Z)
+B.zU=A.b(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
+B.yD=new A.hz(B.zU,B.jg,4,"webp")
+B.zI=A.b(s([66,77]),t.Z)
 B.yG=new A.iV(4,"bmp")
 B.yL=new A.fG(B.yG,!1,6,"bmp")
-B.yy=new A.hz(B.zJ,B.yL,5,"bmp")
+B.yy=new A.hz(B.zI,B.yL,5,"bmp")
 B.Az=A.b(s([B.yB,B.yC,B.yA,B.yz,B.yD,B.yy]),A.a8("u<hz>"))
 B.dU=A.b(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.AA=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
@@ -60552,19 +60554,19 @@ B.Ca=new A.AB(0,"min")
 B.bO=new A.AB(1,"max")
 B.jE=new A.c(42)
 B.ok=new A.c(8589935146)
-B.zX=A.b(s([B.jE,null,null,B.ok]),t.L)
+B.zW=A.b(s([B.jE,null,null,B.ok]),t.L)
 B.o6=new A.c(43)
 B.ol=new A.c(8589935147)
-B.zY=A.b(s([B.o6,null,null,B.ol]),t.L)
+B.zX=A.b(s([B.o6,null,null,B.ol]),t.L)
 B.o7=new A.c(45)
 B.om=new A.c(8589935149)
-B.zZ=A.b(s([B.o7,null,null,B.om]),t.L)
+B.zY=A.b(s([B.o7,null,null,B.om]),t.L)
 B.o8=new A.c(46)
 B.bk=new A.c(8589935150)
-B.A_=A.b(s([B.o8,null,null,B.bk]),t.L)
+B.zZ=A.b(s([B.o8,null,null,B.bk]),t.L)
 B.o9=new A.c(47)
 B.on=new A.c(8589935151)
-B.A0=A.b(s([B.o9,null,null,B.on]),t.L)
+B.A_=A.b(s([B.o9,null,null,B.on]),t.L)
 B.oa=new A.c(48)
 B.fF=new A.c(8589935152)
 B.Af=A.b(s([B.oa,null,null,B.fF]),t.L)
@@ -60599,66 +60601,66 @@ B.AC=A.b(s([B.cG,B.cG,B.e0,null]),t.L)
 B.dX=new A.c(4294967555)
 B.Ae=A.b(s([B.dX,null,B.dX,null]),t.L)
 B.az=new A.c(4294968065)
-B.zK=A.b(s([B.az,null,null,B.bl]),t.L)
+B.zJ=A.b(s([B.az,null,null,B.bl]),t.L)
 B.as=new A.c(4294968066)
-B.zL=A.b(s([B.as,null,null,B.bm]),t.L)
+B.zK=A.b(s([B.as,null,null,B.bm]),t.L)
 B.at=new A.c(4294968067)
-B.zM=A.b(s([B.at,null,null,B.bn]),t.L)
+B.zL=A.b(s([B.at,null,null,B.bn]),t.L)
 B.aA=new A.c(4294968068)
-B.zy=A.b(s([B.aA,null,null,B.bo]),t.L)
+B.zx=A.b(s([B.aA,null,null,B.bo]),t.L)
 B.fy=new A.c(4294968321)
-B.zT=A.b(s([B.fy,null,null,B.fG]),t.L)
+B.zS=A.b(s([B.fy,null,null,B.fG]),t.L)
 B.AD=A.b(s([B.cE,B.cE,B.e_,null]),t.L)
-B.zR=A.b(s([B.X,null,null,B.bk]),t.L)
+B.zQ=A.b(s([B.X,null,null,B.bk]),t.L)
 B.bi=new A.c(4294968069)
-B.zN=A.b(s([B.bi,null,null,B.cI]),t.L)
+B.zM=A.b(s([B.bi,null,null,B.cI]),t.L)
 B.dW=new A.c(4294967309)
 B.fE=new A.c(8589935117)
-B.zI=A.b(s([B.dW,null,null,B.fE]),t.L)
+B.zH=A.b(s([B.dW,null,null,B.fE]),t.L)
 B.bj=new A.c(4294968070)
-B.zO=A.b(s([B.bj,null,null,B.cK]),t.L)
+B.zN=A.b(s([B.bj,null,null,B.cK]),t.L)
 B.fz=new A.c(4294968327)
-B.zU=A.b(s([B.fz,null,null,B.fF]),t.L)
+B.zT=A.b(s([B.fz,null,null,B.fF]),t.L)
 B.AE=A.b(s([B.cH,B.cH,B.e1,null]),t.L)
 B.cC=new A.c(4294968071)
-B.zP=A.b(s([B.cC,null,null,B.cJ]),t.L)
+B.zO=A.b(s([B.cC,null,null,B.cJ]),t.L)
 B.cD=new A.c(4294968072)
-B.zb=A.b(s([B.cD,null,null,B.cL]),t.L)
+B.za=A.b(s([B.cD,null,null,B.cL]),t.L)
 B.AF=A.b(s([B.bN,B.bN,B.cF,null]),t.L)
-B.Cb=new A.c4(["*",B.zX,"+",B.zY,"-",B.zZ,".",B.A_,"/",B.A0,"0",B.Af,"1",B.Ag,"2",B.Ah,"3",B.Ai,"4",B.Aj,"5",B.Ak,"6",B.Al,"7",B.Am,"8",B.Ab,"9",B.Ac,"Alt",B.AC,"AltGraph",B.Ae,"ArrowDown",B.zK,"ArrowLeft",B.zL,"ArrowRight",B.zM,"ArrowUp",B.zy,"Clear",B.zT,"Control",B.AD,"Delete",B.zR,"End",B.zN,"Enter",B.zI,"Home",B.zO,"Insert",B.zU,"Meta",B.AE,"PageDown",B.zP,"PageUp",B.zb,"Shift",B.AF],A.a8("c4<t,G<c?>>"))
-B.zp=A.b(s([42,null,null,8589935146]),t.Z)
-B.zq=A.b(s([43,null,null,8589935147]),t.Z)
-B.zs=A.b(s([45,null,null,8589935149]),t.Z)
-B.zt=A.b(s([46,null,null,8589935150]),t.Z)
-B.zu=A.b(s([47,null,null,8589935151]),t.Z)
-B.zv=A.b(s([48,null,null,8589935152]),t.Z)
-B.zw=A.b(s([49,null,null,8589935153]),t.Z)
-B.zA=A.b(s([50,null,null,8589935154]),t.Z)
-B.zB=A.b(s([51,null,null,8589935155]),t.Z)
-B.zC=A.b(s([52,null,null,8589935156]),t.Z)
-B.zD=A.b(s([53,null,null,8589935157]),t.Z)
-B.zE=A.b(s([54,null,null,8589935158]),t.Z)
-B.zF=A.b(s([55,null,null,8589935159]),t.Z)
-B.zG=A.b(s([56,null,null,8589935160]),t.Z)
-B.zH=A.b(s([57,null,null,8589935161]),t.Z)
+B.Cb=new A.c4(["*",B.zW,"+",B.zX,"-",B.zY,".",B.zZ,"/",B.A_,"0",B.Af,"1",B.Ag,"2",B.Ah,"3",B.Ai,"4",B.Aj,"5",B.Ak,"6",B.Al,"7",B.Am,"8",B.Ab,"9",B.Ac,"Alt",B.AC,"AltGraph",B.Ae,"ArrowDown",B.zJ,"ArrowLeft",B.zK,"ArrowRight",B.zL,"ArrowUp",B.zx,"Clear",B.zS,"Control",B.AD,"Delete",B.zQ,"End",B.zM,"Enter",B.zH,"Home",B.zN,"Insert",B.zT,"Meta",B.AE,"PageDown",B.zO,"PageUp",B.za,"Shift",B.AF],A.a8("c4<t,G<c?>>"))
+B.zo=A.b(s([42,null,null,8589935146]),t.Z)
+B.zp=A.b(s([43,null,null,8589935147]),t.Z)
+B.zr=A.b(s([45,null,null,8589935149]),t.Z)
+B.zs=A.b(s([46,null,null,8589935150]),t.Z)
+B.zt=A.b(s([47,null,null,8589935151]),t.Z)
+B.zu=A.b(s([48,null,null,8589935152]),t.Z)
+B.zv=A.b(s([49,null,null,8589935153]),t.Z)
+B.zz=A.b(s([50,null,null,8589935154]),t.Z)
+B.zA=A.b(s([51,null,null,8589935155]),t.Z)
+B.zB=A.b(s([52,null,null,8589935156]),t.Z)
+B.zC=A.b(s([53,null,null,8589935157]),t.Z)
+B.zD=A.b(s([54,null,null,8589935158]),t.Z)
+B.zE=A.b(s([55,null,null,8589935159]),t.Z)
+B.zF=A.b(s([56,null,null,8589935160]),t.Z)
+B.zG=A.b(s([57,null,null,8589935161]),t.Z)
 B.A1=A.b(s([8589934852,8589934852,8589934853,null]),t.Z)
-B.ze=A.b(s([4294967555,null,4294967555,null]),t.Z)
-B.zf=A.b(s([4294968065,null,null,8589935154]),t.Z)
-B.zg=A.b(s([4294968066,null,null,8589935156]),t.Z)
-B.zh=A.b(s([4294968067,null,null,8589935158]),t.Z)
-B.zi=A.b(s([4294968068,null,null,8589935160]),t.Z)
-B.zn=A.b(s([4294968321,null,null,8589935157]),t.Z)
+B.zd=A.b(s([4294967555,null,4294967555,null]),t.Z)
+B.ze=A.b(s([4294968065,null,null,8589935154]),t.Z)
+B.zf=A.b(s([4294968066,null,null,8589935156]),t.Z)
+B.zg=A.b(s([4294968067,null,null,8589935158]),t.Z)
+B.zh=A.b(s([4294968068,null,null,8589935160]),t.Z)
+B.zm=A.b(s([4294968321,null,null,8589935157]),t.Z)
 B.A2=A.b(s([8589934848,8589934848,8589934849,null]),t.Z)
-B.zd=A.b(s([4294967423,null,null,8589935150]),t.Z)
-B.zj=A.b(s([4294968069,null,null,8589935153]),t.Z)
-B.zc=A.b(s([4294967309,null,null,8589935117]),t.Z)
-B.zk=A.b(s([4294968070,null,null,8589935159]),t.Z)
-B.zo=A.b(s([4294968327,null,null,8589935152]),t.Z)
+B.zc=A.b(s([4294967423,null,null,8589935150]),t.Z)
+B.zi=A.b(s([4294968069,null,null,8589935153]),t.Z)
+B.zb=A.b(s([4294967309,null,null,8589935117]),t.Z)
+B.zj=A.b(s([4294968070,null,null,8589935159]),t.Z)
+B.zn=A.b(s([4294968327,null,null,8589935152]),t.Z)
 B.A3=A.b(s([8589934854,8589934854,8589934855,null]),t.Z)
-B.zl=A.b(s([4294968071,null,null,8589935155]),t.Z)
-B.zm=A.b(s([4294968072,null,null,8589935161]),t.Z)
+B.zk=A.b(s([4294968071,null,null,8589935155]),t.Z)
+B.zl=A.b(s([4294968072,null,null,8589935161]),t.Z)
 B.A4=A.b(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.or=new A.c4(["*",B.zp,"+",B.zq,"-",B.zs,".",B.zt,"/",B.zu,"0",B.zv,"1",B.zw,"2",B.zA,"3",B.zB,"4",B.zC,"5",B.zD,"6",B.zE,"7",B.zF,"8",B.zG,"9",B.zH,"Alt",B.A1,"AltGraph",B.ze,"ArrowDown",B.zf,"ArrowLeft",B.zg,"ArrowRight",B.zh,"ArrowUp",B.zi,"Clear",B.zn,"Control",B.A2,"Delete",B.zd,"End",B.zj,"Enter",B.zc,"Home",B.zk,"Insert",B.zo,"Meta",B.A3,"PageDown",B.zl,"PageUp",B.zm,"Shift",B.A4],A.a8("c4<t,G<i?>>"))
+B.or=new A.c4(["*",B.zo,"+",B.zp,"-",B.zr,".",B.zs,"/",B.zt,"0",B.zu,"1",B.zv,"2",B.zz,"3",B.zA,"4",B.zB,"5",B.zC,"6",B.zD,"7",B.zE,"8",B.zF,"9",B.zG,"Alt",B.A1,"AltGraph",B.zd,"ArrowDown",B.ze,"ArrowLeft",B.zf,"ArrowRight",B.zg,"ArrowUp",B.zh,"Clear",B.zm,"Control",B.A2,"Delete",B.zc,"End",B.zi,"Enter",B.zb,"Home",B.zj,"Insert",B.zn,"Meta",B.A3,"PageDown",B.zk,"PageUp",B.zl,"Shift",B.A4],A.a8("c4<t,G<i?>>"))
 B.Cc=new A.c4([0,"FontWeight.w100",1,"FontWeight.w200",2,"FontWeight.w300",3,"FontWeight.w400",4,"FontWeight.w500",5,"FontWeight.w600",6,"FontWeight.w700",7,"FontWeight.w800",8,"FontWeight.w900"],A.a8("c4<i,t>"))
 B.jD=new A.c(32)
 B.B0=new A.c(33)
@@ -62085,14 +62087,14 @@ B.ux=new A.jz(5,"spaceEvenly")
 B.hD=new A.uo(0,"start")
 B.Li=new A.uo(1,"end")
 B.Lj=new A.uo(2,"center")
-B.E6=new A.fW("assets/images/Fleetify Approval.png","Fleetify Approval","Fleetify Approval is a complementary application built using Flutter with GetX, Dio, and Clean Architecture to ensure easy maintenance and scalability. This app is designed to help managers approve vehicle repairs seamlessly and monitor the repair process more efficiently. With a structured architecture and intuitive interface, Fleetify Approval enhances decision-making and streamlines fleet management operations.",null)
+B.E5=new A.fW("assets/images/Fleetify Approval.png","Fleetify Approval","Fleetify Approval is a complementary application built using Flutter with GetX, Dio, and Clean Architecture to ensure easy maintenance and scalability. This app is designed to help managers approve vehicle repairs seamlessly and monitor the repair process more efficiently. With a structured architecture and intuitive interface, Fleetify Approval enhances decision-making and streamlines fleet management operations.",null)
 B.E9=new A.fW("assets/images/UFOE.png","UFOE","I am working as a freelancer for UFOE, developing a Flutter application that utilizes GetX, MVVM, and Dio for efficient state management and API handling. In this project, I am responsible for developing key features such as the home page, product details, checkout, and more to enhance the user experience and functionality of the app.",null)
 B.E4=new A.fW("assets/images/Breezy.png","Breezy","Breezy - HRMS is a Human Resource Management System (HRMS) prototype built using Flutter with BLoC for state management and Clean Architecture for a well-structured and maintainable codebase. This application is designed to simplify office administration tasks, including attendance management, leave requests, work schedules, and various other features that enhance HR operational efficiency. With an intuitive interface and optimal performance, Breezy helps companies automate administrative processes more effectively and efficiently.",null)
-B.E5=new A.fW("assets/images/tiga_belas.png","Tiga Belas Apps","This project is an online course application developed with Flutter, utilizing BLoC for state management and Clean Architecture for code organization. The app features a home page, course details, user profile, and skills, aimed at providing a well-structured and interactive learning experience. BLoC efficiently manages application state, while Clean Architecture ensures clear separation between presentation, domain, and data layers, enhancing the application's quality and maintainability.",null)
+B.E6=new A.fW("assets/images/tiga belas.png","Tiga Belas Apps","This project is an online course application developed with Flutter, utilizing BLoC for state management and Clean Architecture for code organization. The app features a home page, course details, user profile, and skills, aimed at providing a well-structured and interactive learning experience. BLoC efficiently manages application state, while Clean Architecture ensures clear separation between presentation, domain, and data layers, enhancing the application's quality and maintainability.",null)
 B.E7=new A.fW("assets/images/jobbin.png","Jobbin Apps","A part-time job search application that makes it easier for students / the general public to find suitable part-time jobs. Companies that open part-time vacancies can open part-time vacancies in this application. This application was developed using the Kotlin programming language using the Android Studio platform.",null)
-B.E8=new A.fW("assets/images/lelang_ikan.png","Lelang Ikan Apps","A fish auction application in Kendal Regency that can carry out online auction activities. This application can connect between bidders and participants so they can make transactions online. The roles in this application consist of participants, auctioneers, committee, and admin. The Kendal district community can register as a participant/auction account while the committee and admin accounts are used by the DKP. This application was developed using the Java programming language and the CodeIgniter Framework using the Android Studio platform.",null)
-B.z9=A.b(s([B.E6,B.E9,B.E4,B.E5,B.E7,B.E8]),t.E)
-B.Lk=new A.un(B.hC,15,15,B.z9,null)
+B.E8=new A.fW("assets/images/Lelang Ikan.png","Lelang Ikan Apps","A fish auction application in Kendal Regency that can carry out online auction activities. This application can connect between bidders and participants so they can make transactions online. The roles in this application consist of participants, auctioneers, committee, and admin. The Kendal district community can register as a participant/auction account while the committee and admin accounts are used by the DKP. This application was developed using the Java programming language and the CodeIgniter Framework using the Android Studio platform.",null)
+B.A0=A.b(s([B.E5,B.E9,B.E4,B.E6,B.E7,B.E8]),t.E)
+B.Lk=new A.un(B.hC,15,15,B.A0,null)
 B.ao=new A.DW(0,"forward")
 B.hE=new A.DW(1,"reverse")
 B.Ll=new A.uy(0,"checkbox")
